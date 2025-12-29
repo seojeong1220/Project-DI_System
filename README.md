@@ -1,1 +1,4 @@
-# Project-DI-System
+# Discomfort Index(불쾌지수) System
+
+DHT 센서로 수집한 온도·습도 데이터를 기반으로 **불쾌지수(DI)**를 계산해, 
+OLED 화면에서 실시간으로 시각화하는 환경 모니터링 시스템을 구현했습니다.
