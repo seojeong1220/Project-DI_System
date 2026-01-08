@@ -37,11 +37,11 @@
 | **Output** | **8-Channel LED** | 불쾌지수 레벨 시각화 | GPIO Array |
 
 ## 회로도
-<img width="1152" height="798" alt="image" src="https://github.com/user-attachments/assets/7c677677-9d00-409f-9a0f-dedf87f5ebdc" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/7c677677-9d00-409f-9a0f-dedf87f5ebdc" />
 
 
 ## 시스템 동작 흐름
-<img width="1292" height="663" alt="image" src="https://github.com/user-attachments/assets/7f96fdf5-7a80-491b-b8cc-0cca061a252b" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/7f96fdf5-7a80-491b-b8cc-0cca061a252b" />
 
 - 커널 드라이버가 DHT11 / DS1302를 주기적으로 갱신 (≈2s)
 - 로터리 인코더 조작 시 IRQ 발생 → UI 전환
@@ -60,7 +60,7 @@
 - RTC에 저장
 
 ## 기술 구현
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0a2f0312-0496-4193-bdd9-b6172d8d00b1" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/0a2f0312-0496-4193-bdd9-b6172d8d00b1" />
 
 ### 1) User–Kernel 분리 구조 설계
 - 커널 영역에서 **센서·입력·시간·LED 제어** 수행
@@ -91,4 +91,7 @@
 - `driver.c`: 리눅스 커널 모듈 소스 코드
 - `application.c`: 유저 애플리케이션 (OLED 및 메인 로직)
 - `Makefile`: 커널 빌드 환경(`ARCH=arm64`) 설정
+
+## 동작 영상
+![Image](https://github.com/user-attachments/assets/f0176e1f-c68a-4f46-8134-15ef49a3d649)
 
