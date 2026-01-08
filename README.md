@@ -1,8 +1,10 @@
 # Discomfort Index(불쾌지수) System
 
-본 프로젝트는 RTC 기반 시계 기능에 온·습도 데이터를 결합, 불쾌지수를 계산해 OLED/LED UI로 시각화하는 임베디드 환경 모니터링 시스템입니다. 
 
-단순 라이브러리 사용이 아닌, 커널 공간에서 GPIO 인터럽트를 처리하고 디바이스 드라이버를 구현하여 User Space와 안전하게 데이터를 교환하는 구조를 설계했습니다.
+![Image](https://github.com/user-attachments/assets/75b03121-60c8-4688-a740-2b048f7f456f)
+
+본 프로젝트는 RTC 기반 시계 기능에 온·습도 데이터를 결합, 불쾌지수를 계산해 OLED/LED UI로 시각화하는 **임베디드 환경 모니터링 시스템** 입니다. 
+<br> 단순 라이브러리 사용이 아닌, 커널 공간에서 GPIO 인터럽트를 처리하고 디바이스 드라이버를 구현하여 User Space와 안전하게 데이터를 교환하는 구조를 설계했습니다.
 
 ## 프로젝트 개요
 단순히 라이브러리를 사용하는 수준을 넘어, 커널 공간(Kernel Space)에서 직접 GPIO 인터럽트를 핸들링하고 디바이스 드라이버를 작성하여 유저 공간(User Space) 애플리케이션과 데이터를 주고받는 전체 프로세스를 구현합니다.
@@ -92,5 +94,3 @@
 - `application.c`: 유저 애플리케이션 (OLED 및 메인 로직)
 - `Makefile`: 커널 빌드 환경(`ARCH=arm64`) 설정
 
-## 동작 영상
-![Image](https://github.com/user-attachments/assets/75b03121-60c8-4688-a740-2b048f7f456f)
