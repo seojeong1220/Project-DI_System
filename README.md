@@ -61,6 +61,7 @@
 
 ## 기술 구현
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0a2f0312-0496-4193-bdd9-b6172d8d00b1" />
+
 ### 1) User–Kernel 분리 구조 설계
 - 커널 영역에서 **센서·입력·시간·LED 제어** 수행
 - User Space에서는 **OLED UI 렌더링** 전담
