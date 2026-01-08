@@ -35,6 +35,10 @@ OLED 화면에서 실시간으로 시각화하는 환경 모니터링 시스템�
 | **Display** | **OLED (SSD1306)** | 정보 및 아이콘 출력 | I2C Protocol |
 | **Output** | **8-Channel LED** | 불쾌지수 레벨 시각화 | GPIO Array |
 
+## 회로도
+<img width="1152" height="798" alt="image" src="https://github.com/user-attachments/assets/7c677677-9d00-409f-9a0f-dedf87f5ebdc" />
+
+
 ## 시스템 동작 흐름
 <img width="1292" height="663" alt="image" src="https://github.com/user-attachments/assets/7f96fdf5-7a80-491b-b8cc-0cca061a252b" />
 
