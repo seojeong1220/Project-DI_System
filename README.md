@@ -93,5 +93,4 @@
 - `Makefile`: 커널 빌드 환경(`ARCH=arm64`) 설정
 
 ## 동작 영상
-![Image](https://github.com/user-attachments/assets/f0176e1f-c68a-4f46-8134-15ef49a3d649)
-
+![Image](https://github.com/user-attachments/assets/75b03121-60c8-4688-a740-2b048f7f456f)
